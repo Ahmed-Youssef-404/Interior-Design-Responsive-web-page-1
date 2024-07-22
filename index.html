@@ -1,0 +1,273 @@
+<!-- Ahmed Youssef -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/css.css" />
+    <title>Task 7</title>
+  </head>
+
+  <body>
+    
+    <!-- slider -->
+    <div class="sidebar" id="slide">
+      <a href="">
+        <h1 style="margin: 0 0 50px 20px">Company Name</h1>
+      </a>
+      <div class="the-button" id="button" onclick="showUL()">☰</div>
+      <ul class="ul-content" id="ulContent">
+        <a href="#content">
+          <li>Home</li>
+        </a>
+        <a href="#Showcase">
+          <li>Showcase</li>
+        </a>
+        <a href="#Services">
+          <li>Services</li>
+        </a>
+        <a href="#Designers">
+          <li>Designers</li>
+        </a>
+        <a href="#Packages">
+          <li>Packages</li>
+        </a>
+        <a href="#Contact">
+          <li>Contact</li>
+        </a>
+      </ul>
+    </div>
+
+    <!-- All content of the page -->
+    <div class="content" id="content" onclick="close_slide()">
+
+      <!-- firs section -->
+      <div class="section" id="Showcase">
+        <h1 style="font-weight: bold; font-size: 55px">Interior Design</h1>
+        <h3 class="subtitle">Showcase.</h3>
+        <p class="line"></p>
+
+        <div class="images">
+          <div class="image-column">
+            <img src="images/kitchenconcrete.jpg" alt="Concrete meets bricks" onclick="onClick(this)" />
+            <img src="images/livingroom.jpg" alt=" Light, white and tight scandinavian design" onclick="onClick(this)" />
+            <img src="images/diningroom.jpg" alt="White walls with designer chairs" onclick="onClick(this)" />
+          </div>
+          <div class="image-column">
+            <img src="images/atrium.jpg" alt="Windows for the atrium" onclick="onClick(this)" />
+            <img src="images/bedroom.jpg" alt="Bedroom and office in one space" onclick="onClick(this)" />
+            <img src="images/livingroom2.jpg" alt="Scandinavian design" onclick="onClick(this)" />
+          </div>
+        </div>
+      </div>
+
+      <!-- to show the image when clicked -->
+      <div class="the-modal" id="modal" onclick="this.style.display='none'">
+
+        <div class="the-modal-content animate-zoom">
+          <img id="img1" style="width: 100%" />
+          <div id="caption"></div>
+        </div>
+  
+      </div>
+
+      <!-- second section -->
+      <div class="section" id="Services">
+        <h3 class="subtitle">Services.</h3>
+        <p class="line"></p>
+
+        <p class="text">
+          We are a interior design service that focus on what's best for your
+          home and what's best for you!
+        </p>
+
+        <br />
+
+        <p class="text">
+          Some text about our services - what we do and what we offer. We are
+          lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat.
+        </p>
+      </div>
+
+      <!-- third section -->
+      <div class="section" id="Designers">
+        <h3 class="subtitle">Designers.</h3>
+        <p class="line"></p>
+
+        <p class="text">The best team in the world.</p>
+
+        <br />
+
+        <p class="text">
+          We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+
+        <br />
+
+        <h2>Our designers are thoughtfully chosen:</h2>
+
+        <br />
+        <div class="team">
+
+          <div class="team-member">
+            <img src="images/team1.jpg" alt="team member" />
+            <h2 style="margin: 10px 20px 0 20px">John Doe</h2>
+            <br />
+            <p style="margin-left: 20px; font-size: larger; opacity: 0.6">
+              CEO & Founder
+            </p>
+            <br />
+            <p style="margin-left: 20px; font-size: large">
+              Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque elementum.
+            </p>
+          </div>
+
+          <div class="team-member">
+            <img src="images/team2.jpg" alt="team member" />
+            <h2 style="margin: 10px 20px 0 20px">John Doe</h2>
+            <br />
+            <p style="margin-left: 20px; font-size: larger; opacity: 0.6">
+              Designer
+            </p>
+            <br />
+            <p style="margin-left: 20px; font-size: large">
+              Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque elementum.
+            </p>
+          </div>
+
+          <div class="team-member">
+            <img src="images/team3.jpg" alt="team member" />
+            <h2 style="margin: 10px 20px 0 20px">Mike Ross</h2>
+            <br />
+            <p style="margin-left: 20px; font-size: larger; opacity: 0.6">
+              Architect
+            </p>
+            <br />
+            <p style="margin-left: 20px; font-size: large">
+              Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque elementum.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- fourth section -->
+      <div class="section" id="Packages">
+        <h3 class="subtitle">Packages.</h3>
+        <p class="line"></p>
+
+        <p class="text">
+          Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure
+        </p>
+
+        <br />
+
+        <div class="package-holder">
+
+          <div class="package" id="package1">
+            <div
+              class="package-title"
+              style="background-color: rgb(179, 188, 200)"
+            >
+              <h2>Basic</h2>
+            </div>
+            <div class="package-content" style="border-top: none">
+              some lorem
+            </div>
+            <div class="package-content">Floorplanning</div>
+            <div class="package-content">10 hours support</div>
+            <div class="package-content">Photography</div>
+            <div class="package-content">20% furniture discount</div>
+            <div class="package-content">Good deals</div>
+            <div class="package-content">
+              <h2>$ 199</h2>
+              <br />
+              <p style="opacity: 0.6">per room</p>
+            </div>
+            <div class="package-content">
+              <button style="background-color: #628cc9">Sign Up</button>
+            </div>
+          </div>
+
+          <div class="package" id="package2">
+            <div class="package-title">
+              <h2 style="color: white">Pro</h2>
+            </div>
+            <div class="package-content" style="border-top: none">
+              some lorem
+            </div>
+            <div class="package-content">Floorplanning</div>
+            <div class="package-content">50 hours support</div>
+            <div class="package-content">Photography</div>
+            <div class="package-content">50% furniture discount</div>
+            <div class="package-content">GREAT deals</div>
+            <div class="package-content">
+              <h2>$ 249</h2>
+              <br />
+              <p style="opacity: 0.6">per room</p>
+            </div>
+            <div class="package-content"><button>Sign Up</button></div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- fifth section -->
+      <div class="section" id="Contact">
+        <h3 class="subtitle">Contact.</h3>
+        <p class="line"></p>
+
+        <p class="text">
+          Do you want us to style your home? Fill out the form and fill me in
+          with the details :) We love meeting new people!
+        </p>
+
+        <br />
+
+        <form action="">
+          <label for="name">Name</label>
+          <input type="text" id="name" required/>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+
+          <label for="message">Message</label>
+          <textarea id="message"></textarea>
+
+          <button type="submit">Send</button>
+
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>Copyright &copy; Developed By <u>Ahmed Youssef</u> </p>
+    </footer>
+
+    <script src="js/js.js"></script>
+  </body>
+</html>

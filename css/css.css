@@ -1,0 +1,373 @@
+/* Ahmed Youssef */
+:root {
+  --main-color: #1052b4;
+  --card-background-color: #cfe4ff;
+  --background-color: #e4f0ff;
+  --hover-color: #eeffd7;
+  --font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  cursor: default;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: #04006e;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  background-color: var(--main-color);
+  color: aliceblue;
+  overflow: auto;
+  font-size: large;
+  width: 12em;
+  height: 100vh;
+  position: fixed;
+  padding: 80px 20px;
+}
+
+.the-button {
+  display: none;
+  cursor: pointer;
+}
+
+.sidebar .ul-content {
+  list-style: none;
+}
+
+.sidebar .ul-content li {
+  padding: 10px 20px;
+}
+
+.sidebar .ul-content li:hover {
+  border-radius: 50px;
+  background-color: var(--hover-color);
+  color: black;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #daebe3;
+}
+
+.content {
+  margin-left: 13em;
+  padding: 0 40px;
+  color: black;
+  background-color: var(--background-color);
+}
+
+.section {
+  margin-top: 75px;
+  padding-bottom: 40px;
+}
+
+.content .section .subtitle {
+  font-size: 45px;
+  color: var(--main-color);
+  font-weight: bolder;
+}
+
+.content .section .line {
+  margin: 25px 0;
+  background-color: var(--main-color);
+  border-radius: 50px;
+  height: 10px;
+  width: 100px;
+}
+
+.content .section .text {
+  font-family: var(--font-family);
+  font-size: 19px;
+  font-weight: 100;
+  text-align: justify;
+  line-height: 27px;
+}
+
+.content #Showcase .images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.content #Showcase .images .image-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content #Showcase .images img {
+  opacity: 0.8;
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+}
+
+.content #Showcase .images img:hover{
+  opacity: 1;
+}
+
+.the-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.the-modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+.the-modal .the-modal-content #caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.animate-zoom {
+  animation: animatezoom 0.6s;
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.content #Designers .team {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content #Designers .team .team-member {
+  background-color: var(--card-background-color);
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.content .package-holder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content .package-holder .package {
+  background-color: var(--card-background-color);
+  width: 50%;
+  height: auto;
+}
+
+.content .package-holder .package .package-title {
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.content .package-holder .package .package-content {
+  border-top: solid gray 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.content .package-holder .package .package-content button {
+  background-color: var(--main-color);
+  color: white;
+  font-size: medium;
+  font-weight: 600;
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+  border: none;
+  transition: 0.1s;
+}
+
+.content .package-holder .package .package-content button:hover {
+  background-color: rgb(0, 0, 0) !important;
+  box-shadow: 1px 1px 3px 0px var(--main-color);
+  color: var(--hover-color);
+  color: white;
+  transition: 0.2s;
+}
+
+.content .package-holder #package1 {
+  margin-right: 10px;
+}
+
+.content #Contact form{
+  display: flex;
+  flex-direction: column;
+}
+
+.content #Contact form label{
+  font-size: 1.2em;
+
+}
+
+.content #Contact form input,textarea{
+  margin: 5px 0 20px 0;
+  height: 40px;
+  font-size: large;
+  padding-left: 10px;
+}
+
+
+.content #Contact form textarea{
+  font-family: var(--font-family);
+  height: 120px;
+  padding: 10px;
+  resize: none;
+}
+
+.content #Contact form input:focus,textarea:focus{
+  border: 2px solid var(--main-color);
+  outline: none;
+}
+
+.content #Contact form button{
+  background-color: var(--main-color);
+  color: white;
+  font-size: medium;
+  font-weight: 600;
+  cursor: pointer;
+  height: 40px;
+  border: none;
+  transition: 0.1s;
+}
+
+.content #Contact form button:hover{
+  background-color: rgb(0, 0, 255) !important;
+  color: var(--hover-color);
+  color: white;
+  transition: 0.2s;
+}
+
+footer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: #a5c2ff;
+  padding: 30px;
+  height: 120px;
+  width: 100%;
+}
+
+@media screen and (min-width: 1px) and (max-width: 850px) {
+  .sidebar {
+    width: 100%;
+    height: 50px;
+    padding: 25px 5px;
+    overflow: visible;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      font-size: 1.5em;
+      margin: 0 !important;
+    }
+
+    .the-button {
+      display: block;
+      padding: 10px;
+      background-color: var(--secondary-color);
+      color: white;
+      border: none;
+      font-size: 1rem;
+    }
+
+    .ul-content {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      background-color: var(--main-color);
+
+      li {
+        padding: 0 10px;
+        margin: 2px 10px;
+      }
+    }
+
+    .ul-content.show {
+      display: block;
+    }
+  }
+
+  .content {
+    margin-left: 0;
+    padding-top: 100px;
+
+    .section{
+      scroll-margin-top: 60px;
+    }
+  }
+
+
+}
+
+@media screen and (min-width: 1px) and (max-width: 600px) {
+  .content #Designers .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .team-member {
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+
+  .content .package-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .package {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    #package1 {
+      margin: 0;
+    }
+  }
+  
+  .images {
+    grid-template-columns: none !important;
+  }
+}
