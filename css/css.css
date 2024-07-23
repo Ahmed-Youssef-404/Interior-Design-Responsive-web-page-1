@@ -336,6 +336,10 @@ footer {
     }
   }
 
+  footer {
+    justify-content: center;
+  }
+
 
 }
 
@@ -369,5 +373,9 @@ footer {
   
   .images {
     grid-template-columns: none !important;
+  }
+
+  footer {
+    justify-content: center;
   }
 }
